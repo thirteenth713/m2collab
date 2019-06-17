@@ -1,0 +1,82 @@
+.thrid-content{
+	display:none;
+	position:relative;
+	
+}
+.wrapper-thrid-content{
+	margin-top:40px;
+	display:flex;
+	justify-content:center;
+	
+}
+.item-list-heircut-price{
+	padding-top:15px;
+	padding-bottom: 15px;
+	display:flex;
+	justify-content:space-between;
+	width: 591px;
+}
+.name-heircut{
+	margin-left:35px;
+	display:block;
+	color:#fff;
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	
+}
+.price{
+	
+	margin-right:35px;
+	display:block;
+	color:#fff;
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	
+}
+.item-list-heircut-price:hover{
+	background-color: #000;
+	transition:all 0.5s ease;
+}
+.active-wrapper-menu-block{
+	position:relative;
+	margin-top:23px;
+	display:flex;
+	justify-content:center;
+}
+.active-menu-block{
+	z-index:5;
+	letter-spacing: 2px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: 'BebasNeue-Bold';
+	width:285px;
+	height: 45px;
+	background-color: #393939;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#fff;
+}
+.active-wrapper-menu-block-map{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	
+}
+.active-menu-block-map{
+	margin-top:70px;
+	position:absolute;
+	letter-spacing: 2px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: 'BebasNeue-Bold';
+	width:285px;
+	height: 45px;
+	background-color: #393939;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#fff;
+	
+}
+

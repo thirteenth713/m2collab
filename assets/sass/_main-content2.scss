@@ -1,0 +1,168 @@
+.second-content{
+	display:none;
+	
+}
+.second-content-mobile{
+	display:none;
+}
+.wrapper-second-content{
+	margin-top:40px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.title-second-content{
+	line-height: 1.5;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 18px;
+	
+}
+.list-wrapper{
+	margin-left:30px;
+	
+}
+.list-item{
+	display:flex;
+}
+.list-item img{
+	width:50px;
+	height:50px;
+}
+.desc-list-item{
+	line-height: 1.5;
+	margin-left:15px;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 16px;
+	 
+}
+.list-item:nth-child(1){
+	margin-top:30px;
+}
+.list-item:nth-child(2){
+	margin-top:22px;
+}
+.list-item:nth-child(3){
+	margin-top:36px;
+}
+.tablet-slider-block{
+	display:none;
+}
+
+.tablet-second-content{
+	margin-top:91px;
+	display:flex;
+	justify-content:center;
+	
+	
+}
+.wrapper-tablet-second-content{
+
+	
+}
+.title-tablet-second-content{
+	line-height: 1.5;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 16px;
+	
+}
+.tablet-slider-second-content{
+	width:700px;
+	
+}
+.tablet-slider-item{
+	
+}
+.tablet-content-slider-item{
+	display:flex;
+	
+}
+.desc-tablet-slider{
+	margin-top:34px;
+	line-height: 1.5;
+	margin-left:30px;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 16px;
+}
+.your-class-arrow3{
+	margin-left:30%;
+	align-items:center;
+	justify-content:center;
+	margin-top:40px;
+	display:flex;
+	
+}
+
+.mobile-slider-block{
+	
+}
+.mobile-second-content{
+}
+.wrapper-mobile-second-content{
+	
+}
+.title-mobile-second-content{
+	margin-left:5px;
+	margin-top:23px;
+	line-height: 1.5;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 14px;
+	
+}
+.mobile-slider-second-content{
+	width:300px;
+	
+}
+.mobile-slider-item{
+	
+}
+.mobile-content-slider-item{
+	
+}
+.desc-mobile-slider{
+	margin-left:20px;
+	line-height: 1.5;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	font-size: 12px;
+	
+}
+.img-title{
+	font-family: 'BebasNeue-Regular';
+	font-size: 18px;
+	color:#F6E200;
+}
+.mobile-content__flex__element{
+	margin-bottom:10px;
+	margin-left:15px;
+	display:flex;
+	align-items:center;
+}
+.mobile-content__flex__element img{
+	width:42px;
+	height:50px;
+}
+.mobile-content__flex__element span{
+	display:block;
+	margin-left:20px;
+}
+.prev i{
+	color:#fff;
+}
+.next i {
+	color:#fff;
+}
+.flex-arrow-mob{
+}
+.prev{
+	margin-top:15px;
+	position:relative;
+	display:flex;
+}
+.slick-slide{
+	outline: none;
+}

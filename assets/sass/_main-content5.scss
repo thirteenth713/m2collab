@@ -1,0 +1,122 @@
+.form-content{
+	display:none;
+}
+#active-mob-deactiv-web{
+	display:none;
+}
+
+.form-wrapper-flex{
+	display:flex;
+	justify-content:center;
+	
+}
+.form-block{
+	width:660px;
+	margin-top:30px;
+	
+}
+.title-form{
+	text-align:center;
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	
+}
+.name-post{
+	width:200px;
+	display:block;
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+	
+}
+.from-post{
+	margin-top:40px;
+	display:flex;
+}
+.from-post input{
+	outline:none;
+	color:#fff;
+	z-index:10;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	width:400px;
+}
+.from-post textarea{
+	z-index: 10;
+	margin-right:8px;
+	outline:none;
+	color:#fff;
+	z-index:10;
+	height: 80px;
+	width:400px;
+	background-color: transparent;
+	-webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+	
+}
+.link-summary-block{
+	position:relative;
+	justify-content:center;
+	display:flex;
+	align-items:center;
+	margin-top:25px;
+}
+
+.link-summary-block label{
+	cursor:pointer;
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	color:#fff;
+}
+.link-summary-block button{
+	font-size: 20px;
+	font-family: 'Roboto-Regular';
+	cursor:pointer;
+	color:#fff;
+	border:none;
+	background-color: transparent;
+}
+.successfully-block{
+	display:none;
+}
+.btn{
+	cursor:pointer;
+	color:#fff;
+}
+.button-submit{
+	letter-spacing: 1.5px;
+	position:relative;
+	z-index:2;
+	cursor:pointer;
+	font-size: 20px;
+	text-transform: uppercase;
+	color:#fff;
+	font-family: 'BebasNeue-Regular';
+	background-color: transparent;
+	width: 240px;
+	height: 69px;
+	margin-top:25px;
+	border:1px solid white;
+	
+}
+
+
+.mustache{
+	right:10px;
+	margin-left:10px;
+	display:none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  opacity:0.5;
+}
+.button-wrapper-mobile{
+	text-align:center;
+}
