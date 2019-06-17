@@ -7,6 +7,9 @@
  * @package m2collab
  */
 
+//  Скрыть админ-бар вне админки.
+add_filter('show_admin_bar', '__return_false');
+
 if ( ! function_exists( 'm2col_setup' ) ) :
 	function m2col_setup() {
 
@@ -63,6 +66,8 @@ add_action( 'widgets_init', 'm2col_widgets_init' );
  * Подключение стилей и скриптов.
  */
 function m2col_scripts() {
+	wp_enqueue_style('style-css', get_stylesheet_uri());
+
 	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr');
 	wp_enqueue_style('slick-css', get_template_directory_uri() . 'assets/slick/slick.css');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . 'assets/slick/slick-theme.css');
