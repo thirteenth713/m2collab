@@ -41,11 +41,81 @@ function custom_theme_options() {
 		),
 		'sections'        => array(
 			array(
+				'id'    => 'header',
+				'title' => 'Шапка',
+			),
+			array(
 				'id'    => 'option_types',
 				'title' => __( 'Option Types', 'theme-text-domain' ),
 			),
 		),
 		'settings'        => array(
+			/* Таб для размещения раздела настроек в разделе "Основные" */
+			array(
+				'id'           => 'header_tab',
+				'label'        => 'Основные',
+				'desc'         => '',
+				'type'         => 'tab',
+				'section'      => 'header',
+			),
+			/* Секция кастроек для загрузки изображения в качестве лого */
+				array(
+				'id'           => 'logo_upload',
+				'label'        => 'Логотип',
+				'desc'         => 'Загрузка картинки для логотипа',
+				'type'         => 'upload',
+				'section'      => 'header',
+			),
+			/* Таб для размещения раздела настроек в разделе "Контакты" */
+			array(
+				'id'           => 'header_contact_tab',
+				'label'        => 'Контаткты',
+				'desc'         => '',
+				'type'         => 'tab',
+				'section'      => 'header',
+			),
+			array(
+				'id'           => 'contact_phone_1',
+				'label'        => 'Телефон 1',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'header',
+			),
+			array(
+				'id'           => 'contact_phone_2',
+				'label'        => 'Телефон 2',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'header',
+			),
+			array(
+				'id'           => 'contact_open_pn_sb',
+				'label'        => 'Часы работы пн-сб',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'header',
+			),
+			array(
+				'id'           => 'contact_open_vs',
+				'label'        => 'Часы работы вс',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'header',
+			),
+			array(
+				'id'           => 'contact_adres',
+				'label'        => 'Адресс',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'header',
+			),
+
+			/* Примеры настроек */
 			array(
 				'id'           => 'demo_background',
 				'label'        => __( 'Background', 'theme-text-domain' ),
