@@ -10,6 +10,16 @@
 //  Скрыть админ-бар вне админки.
 add_filter('show_admin_bar', '__return_false');
 
+/* 
+ *	Required: set 'ot_theme_mode' filter true. Подключение фильтра плагина OptionTree
+ */
+add_filter('ot_theme_mode', '__return_true');
+
+/*
+ *	Required: include OptionTree. Подключение к теме OptionTree.
+ */
+require(trailingslashit( get_template_directory_uri() ) . 'option-tree/ot-loader.php');
+
 if ( ! function_exists( 'm2col_setup' ) ) :
 	function m2col_setup() {
 
@@ -71,6 +81,7 @@ function m2col_scripts() {
 	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr');
 	wp_enqueue_style('slick-css', get_template_directory_uri() . 'assets/slick/slick.css');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . 'assets/slick/slick-theme.css');
+	wp_enqueue_style('style-th', get_template_directory_uri() . '/assets/css/style-th.css');
 	wp_enqueue_style( 'm2col-style', get_template_directory_uri() . '/assets/css/style.css' );
 
 
