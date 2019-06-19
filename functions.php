@@ -13,46 +13,63 @@ add_filter('show_admin_bar', '__return_false');
 /* 
  *	Required: set 'ot_theme_mode' filter true. Подключение фильтра плагина OptionTree
  */
-add_filter('ot_theme_mode', '__return_true');
+add_filter( 'ot_theme_mode', '__return_true' );
+
+add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_show_pages', '__return_true' );
+
+/*
+ *	Фильтр для выноса настроек темы на уровень выше в админ панели.
+ */
+function theme_options_parent($parent ) {
+	$parent = '';
+	return $parent;
+}
+add_filter('ot_theme_options_parent_slug', 'theme_options_parent', 20);
 
 /*
  *	Required: include OptionTree. Подключение к теме OptionTree.
  */
-require(trailingslashit( get_template_directory_uri() ) . 'option-tree/ot-loader.php');
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+/*
+ *	Подключение к теме шаблонов meta-boxes.
+ */
+require( trailingslashit( get_template_directory() ) . 'functions/theme-options.php' );
+require( trailingslashit( get_template_directory() ) . 'functions/meta-boxes.php' );
 
-if ( ! function_exists( 'm2col_setup' ) ) :
-	function m2col_setup() {
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+function m2col_setup() {
 
-		/*
-		 * Автоматическое расставление тегов "title"
-		 */
-		add_theme_support( 'title-tag' );
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
 
-		/*
-		 * Поддержка миниатюр
-		 */
-		add_theme_support( 'post-thumbnails' );
+	/*
+		* Автоматическое расставление тегов "title"
+		*/
+	add_theme_support( 'title-tag' );
 
-		// This theme uses wp_nav_menu() in one location. Регистрация меню.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'm2col' ),
-		) );
+	/*
+		* Поддержка миниатюр
+		*/
+	add_theme_support( 'post-thumbnails' );
 
-		/*
-		 * Поддержка поисков, комментарий, галлерей, картинок постов.
-		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
-	}
-endif;
+	// This theme uses wp_nav_menu() in one location. Регистрация меню.
+	register_nav_menus( array(
+		'menu-1' => esc_html__( 'Primary', 'm2col' ),
+	) );
+
+	/*
+		* Поддержка поисков, комментарий, галлерей, картинок постов.
+		*/
+	add_theme_support( 'html5', array(
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+	) );
+}
+
 add_action( 'after_setup_theme', 'm2col_setup' );
 
 /*
