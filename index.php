@@ -18,19 +18,19 @@ get_header();
 <div class="contacts-wrapper">
 	<div class="addres">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.svg">
-	<?php if (ot_get_option('contact_adres')) { ?>
-		<a href="cont_7" class="link yellow"><?php echo ot_get_option('contact_adres'); ?></a>
-	<?php } ?>
+		<?php if (ot_get_option('contact_adres')) { ?>
+			<a href="cont_7" class="link yellow"><?php echo ot_get_option('contact_adres'); ?></a>
+		<?php } ?>
 
 	</div>
 	<div class="wrapper-working-time-block">
-	<?php if (ot_get_option('contact_open_pn_sb')) { ?>
-		<span class="working-time yellow"><?php echo ot_get_option('contact_open_pn_sb'); ?></span>
-	<?php } ?>
+		<?php if (ot_get_option('contact_open_pn_sb')) { ?>
+			<span class="working-time yellow"><?php echo ot_get_option('contact_open_pn_sb'); ?></span>
+		<?php } ?>
 
-	<?php if (ot_get_option('contact_open_vs')) { ?>
-		<span class="working-time yellow"><?php echo ot_get_option('contact_open_vs'); ?></span>
-	<?php } ?>
+		<?php if (ot_get_option('contact_open_vs')) { ?>
+			<span class="working-time yellow"><?php echo ot_get_option('contact_open_vs'); ?></span>
+		<?php } ?>
 	</div>
 
 	<div class="wrapper-phone-block">
@@ -49,8 +49,12 @@ get_header();
 </div><!-- close contact-wrapper</!-->
 
 <div class="social-block" id="social-box">
-	<a target="_blank" href="https://www.instagram.com/m2cuts"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg"></a>
-	<a target="_blank" href="https://www.facebook.com/M2-Barbershop-Zaporizhia-426311434416476/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg"></a>
+	<a target="_blank" href="https://www.instagram.com/m2cuts">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg">
+	</a>
+	<a target="_blank" href="https://www.facebook.com/M2-Barbershop-Zaporizhia-426311434416476/">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg">
+	</a>
 
 </div>
 
