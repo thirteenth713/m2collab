@@ -108,7 +108,7 @@
 				</div>
 				<!------------------------------------------------------------------------------------------------------->
 
-<!-- Start Header-->
+				<!-- Start Header-->
 
 				<header>
 					<div class="wrapper-header">
@@ -119,7 +119,6 @@
 										<div class="shadow-block"></div>
 									</div>
 									<a href="cont_3" class="link">Услуги</a>
-
 								</div>
 								<div class="menu-item">
 									<div class="psix">
@@ -128,8 +127,7 @@
 									<a href="cont_4" class="link">Школа<br> Вакансии</a>
 								</div>
 								<div class="menu-item">
-									<!-- <a href="cont_1" class="link activ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"></a> -->
-									<a href="<?php echo home_url();?>" class="link activ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"></a>
+									<a href="cont_1" class="link activ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"></a>
 									<div class="black-square">
 										<span class="heir-block">haircut? me too!</span>
 									</div>
@@ -167,8 +165,13 @@
 									<h5>Контакты</h5>
 								</div>
 								<div class="time-work-mob-map">
-									<span>пн-сб 10:00 - 21:00</span><br>
-									<span>вс 10:00 - 20:00
+								<?php if (ot_get_option('contact_open_pn_sb')) { ?>
+									<span><?php echo ot_get_option('contact_open_pn_sb'); ?></span><br>
+								<?php } ?>
+								
+								<?php if (ot_get_option('contact_open_vs')) { ?>
+									<span><?php echo ot_get_option('contact_open_pn_sb'); ?></span>
+								<?php } ?>
 								</div>
 
 							</div>
@@ -188,7 +191,7 @@
 								<div class="main-telephone">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-call.svg">
 									<?php if (ot_get_option('contact_phone_1')) { ?>
-									<a href="tel:<?php echo ot_get_option('contact_phone_1'); ?>"><?php echo ot_get_option('contact_phone_1'); ?></a>
+										<a href="tel:<?php echo ot_get_option('contact_phone_1'); ?>"><?php echo ot_get_option('contact_phone_1'); ?></a>
 									<?php } ?>
 								</div>
 
@@ -203,12 +206,12 @@
 						<div class="flex-slogan-phone" id="contact-telephone-open">
 							<div class="wrapper-flex-slogan-phone">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-call-yellow.svg " alt="phone-call">
-								<?php if (ot_get_option('contact_phone')) {?>
-								<a href="tel:<?php echo ot_get_option('contact_phone_2'); ?>"><?php echo ot_get_option('contact_phone_2'); ?></a>&nbsp;
+								<?php if (ot_get_option('contact_phone')) { ?>
+									<a href="tel:<?php echo ot_get_option('contact_phone_2'); ?>"><?php echo ot_get_option('contact_phone_2'); ?></a>&nbsp;
 								<?php } ?>
 								<span>/</span>&nbsp;
-								<?php if (ot_get_option('contact_phone')) {?>
-								<a href="tel:<?php echo ot_get_option('contact_phone_2'); ?>"><?php echo ot_get_option('contact_phone_2'); ?></a>
+								<?php if (ot_get_option('contact_phone')) { ?>
+									<a href="tel:<?php echo ot_get_option('contact_phone_2'); ?>"><?php echo ot_get_option('contact_phone_2'); ?></a>
 								<?php } ?>
 							</div>
 							<!--close flex-slogan-phone-->
@@ -218,7 +221,4 @@
 
 				</header>
 
-<!-- End Header-->
-
-
-				
+				<!-- End Header-->

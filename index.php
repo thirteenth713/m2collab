@@ -34,7 +34,6 @@ get_header();
 	</div>
 
 	<div class="wrapper-phone-block">
-		<!-- <a class="phone-number yellow" href="tel:+380999024505">0999024505</a> <span class="yellow"> / </span><a class="phone-number yellow" href="tel:+380685241550">0685241550</a> -->
 		<?php if (ot_get_option('contact_phone_1')) { ?>
 			<a class="phone-number yellow" href="tel:<?php echo ot_get_option('contact_phone_1'); ?>"><?php echo ot_get_option('contact_phone_1'); ?></a>
 		<?php } ?>
@@ -59,27 +58,20 @@ get_header();
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
 <!-------------------------------------first content--------------------------------------------------->
-
-
 
 
 <div class="first-content" id="cont_1">
 
 	<div class="title-main-content1">
-		<h1 class="title-name">
+		<!-- <h1 class="title-name">
 			<span class="upper">M2</span> - барбершоп это мужская парикмахерская с принципами. Мы как никто другой <br>
 			ценим чистоту, открытость, комфорт, качество во всех деталях.<br> Наша миссия - помочь тебе нравится себе!
+		</h1> -->
+		<h1 class="title-name">
+		<?php if (ot_get_option('main_textarea_desctop_simple')) { ?>
+			<?php echo ot_get_option('main_textarea_desctop_simple'); ?>
+		<?php } ?>
 		</h1>
 	</div>
 
@@ -118,17 +110,7 @@ get_header();
 
 </div>
 
-
-
-
-
-
-
-
-
 <!--------------------------------- mobile first content--------------------------------------->
-
-
 
 <div class="first-content-mobile" id="contm_1">
 
@@ -142,8 +124,11 @@ get_header();
 
 	<div class="title-main-content1">
 		<h1 class="title-name">
-			<span class="upper">M2</span> - барбершоп это мужская парикмахерская с принципами. Мы как никто другой <br>
-			ценим чистоту, открытость, комфорт, качество во всех деталях. Наша миссия - помочь тебе нравится себе!
+		<?php if (ot_get_option('main_textarea_mobile_simple')) { ?>
+			<?php echo ot_get_option('main_textarea_mobile_simple'); ?>
+		<?php } ?>
+			<!-- <span class="upper">M2</span> - барбершоп это мужская парикмахерская с принципами. Мы как никто другой <br>
+			ценим чистоту, открытость, комфорт, качество во всех деталях. Наша миссия - помочь тебе нравится себе! -->
 		</h1>
 	</div>
 	<div class="background-flex">
@@ -154,8 +139,6 @@ get_header();
 				</span>
 
 			</div>
-
-
 		</div>
 		<!---close background words--->
 
@@ -165,7 +148,7 @@ get_header();
 
 
 	<div class="first-content-mobile-img">
-		<img src="img/bcg-mob.svg">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/bcg-mob.svg">
 	</div>
 
 
@@ -219,7 +202,7 @@ get_header();
 		</h2>
 		<div class="list-wrapper">
 			<div class="list-item">
-				<img src="img/Vector.svg">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector.svg">
 				<p class="desc-list-item">
 					Нам важен твой комфорт, мы используем лучшие кресла c откидывающимися спинками, <br>
 					угощаем кофе, играем с тобой в плейстейшен на удобных диванах. Ты не найдешь грязи,<br>
@@ -228,14 +211,14 @@ get_header();
 				</p>
 			</div>
 			<div class="list-item">
-				<img src="img/043-bow-tie.svg">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/043-bow-tie.svg">
 				<p class="desc-list-item">
 					Мы работаем над навыками нашего персонала. Наши администраторы максимально<br>
 					отзывчивы и тактичны. А барберы - клиентоориентированые профессионалы.
 				</p>
 			</div>
 			<div class="list-item">
-				<img src="img/009-man.svg">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/009-man.svg">
 				<p class="desc-list-item">
 					Наше главное требование при приеме на работу барбера- работать на максимум каждый<br>
 					день. Каждую стрижку. Мы перфекционисты, мы либо лучшие, либо никак.<br>
@@ -268,7 +251,7 @@ get_header();
 			<div class="tablet-slider-second-content">
 				<div class="tablet-slider-item">
 					<div class="tablet-content-slider-item">
-						<img src="img/Vector.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector.svg">
 						<p class="desc-tablet-slider">
 							Нам важен твой комфорт, мы используем лучшие кресла с откидывающимися спинками, <br>
 							угощаем кофе, играем с тобой в плейстейшен на удобных диванах. Ты не найдешь грязи,<br>
@@ -284,7 +267,7 @@ get_header();
 
 				<div class="tablet-slider-item">
 					<div class="tablet-content-slider-item">
-						<img src="img/043-bow-tie.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/043-bow-tie.svg">
 						<p class="desc-tablet-slider">
 							Мы работаем над навыками нашего персонала. Наши администраторы максимально<br>
 							отзывчивы и тактичны. А барберы - клиентоориентированые профессионалы
@@ -298,7 +281,7 @@ get_header();
 
 				<div class="tablet-slider-item">
 					<div class="tablet-content-slider-item">
-						<img src="img/009-man.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/009-man.svg">
 						<p class="desc-tablet-slider">
 							Наше главное требование при приеме на работу барбера- работать на максимум каждый<br>
 							день. Каждую стрижку. Мы перфекционисты, мы либо лучшие, либо никак.<br>
@@ -357,7 +340,7 @@ get_header();
 					<div class="mobile-slider-item">
 						<div class="mobile-content-slider-item">
 							<div class="mobile-content__flex__element">
-								<img src="img/Vector1-yellow.svg">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector1-yellow.svg">
 								<span class="img-title">Комфорт</span>
 
 							</div>
@@ -378,7 +361,7 @@ get_header();
 					<div class="mobile-slider-item">
 						<div class="mobile-content-slider-item">
 							<div class="mobile-content__flex__element">
-								<img src="img/Vector2-yellow.svg">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector2-yellow.svg">
 								<span class="img-title">Персонал</span>
 
 							</div>
@@ -402,7 +385,7 @@ get_header();
 					< class="mobile-slider-item">
 						<div class="mobile-content-slider-item">
 							<div class="mobile-content__flex__element">
-								<img src="img/Vector3-yellow.svg">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector3-yellow.svg">
 								<span class="img-title">Качество</span>
 
 							</div>
@@ -832,13 +815,13 @@ get_header();
 					<label class="name-post">
 						Ваше имя*
 					</label>
-					<input type="text" placeholder="Ваше имя*" id="rez1" name="user_name" required oninput="func()"><img id="ones" class="mustache" src="img/ycik.svg">
+					<input type="text" placeholder="Ваше имя*" id="rez1" name="user_name" required oninput="func()"><img id="ones" class="mustache" src="<?php echo get_template_directory_uri(); ?>/assets/img/ycik.svg">
 				</div>
 				<div class="from-post">
 					<label class="name-post">
 						Ваша фамилия*
 					</label>
-					<input type="text" placeholder="Ваша фамилия*" id="rez2" name="user_surname" required oninput="func2()"><img id="towes" class="mustache" src="img/ycik.svg">
+					<input type="text" placeholder="Ваша фамилия*" id="rez2" name="user_surname" required oninput="func2()"><img id="towes" class="mustache" src="<?php echo get_template_directory_uri(); ?>/assets/img/ycik.svg">
 
 				</div>
 
@@ -846,7 +829,7 @@ get_header();
 					<label class="name-post">
 						Моб.номер*
 					</label>
-					<input type="text" placeholder="Моб номер*" id="rez3" name="user_phone" required oninput="func3()"><img id="threes" class="mustache" src="img/ycik.svg">
+					<input type="text" placeholder="Моб номер*" id="rez3" name="user_phone" required oninput="func3()"><img id="threes" class="mustache" src="<?php echo get_template_directory_uri(); ?>/assets/img/ycik.svg">
 
 				</div>
 
@@ -855,13 +838,13 @@ get_header();
 						О себе*
 					</label>
 					<textarea oninput="func4()" id="rez4" name="user_text" placeholder="Опыт работы, предыдущие сферы деятельности*"></textarea>
-					<img id="fores" class="mustache" src="img/ycik.svg">
+					<img id="fores" class="mustache" src="<?php echo get_template_directory_uri(); ?>/assets/img/ycik.svg">
 
 
 				</div>
 
 				<div class="link-summary-block">
-					<img src="img/attach.svg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/attach.svg">
 					<label for="file">Отправить резюме</label>
 					<input type="file" id="file" name="uploaded_file" style="display:none;">
 				</div>
@@ -906,7 +889,7 @@ get_header();
 
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/cake.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/cake.svg">
 					</div>
 					<div class="krab">
 
@@ -928,7 +911,7 @@ get_header();
 
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/friends disctount icon.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/friends disctount icon.svg">
 					</div>
 					<div class="krab">
 
@@ -952,7 +935,7 @@ get_header();
 			<div class="content-slide">
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/instagram discounts.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram discounts.svg">
 					</div>
 					<div class="krab">
 
@@ -1040,7 +1023,7 @@ get_header();
 
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/cake.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/cake.svg">
 					</div>
 
 					<h4 class="title-slide">
@@ -1064,7 +1047,7 @@ get_header();
 
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/friends disctount icon.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/friends disctount icon.svg">
 					</div>
 
 					<h4 class="title-slide">
@@ -1090,7 +1073,7 @@ get_header();
 
 				<div class="text-slide-box">
 					<div class="img-block">
-						<img src="img/instagram discounts.svg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram discounts.svg">
 					</div>
 
 					<h4 class="title-slide">
@@ -1143,7 +1126,7 @@ get_header();
 		<div class="news-slider">
 			<div class="slide-item-news">
 				<div class="img-slide-news">
-					<img src="img/photo.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo.png">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1160,7 +1143,7 @@ get_header();
 			</div>
 			<div class="slide-item-news">
 				<div class="img-slide-news">
-					<img src="img/photo2-slider-news.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo2-slider-news.png">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1180,7 +1163,7 @@ get_header();
 
 			<div class="slide-item-news">
 				<div class="img-slide-news">
-					<img src="img/dwadwae.jpeg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/dwadwae.jpeg">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1198,7 +1181,7 @@ get_header();
 
 			<div class="slide-item-news">
 				<div class="img-slide-news">
-					<img src="img/evveev.jpeg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/evveev.jpeg">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1266,7 +1249,7 @@ get_header();
 		<div class="news-slider">
 			<div class="slide-item-news">
 				<div class="img-slide-news">
-					<img src="img/photo.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo.png">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1284,7 +1267,7 @@ get_header();
 			</div>
 			<div class="slide-item-news" id="marg-img">
 				<div class="img-slide-news">
-					<img src="img/photo2-slider-news.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo2-slider-news.png">
 				</div>
 				<div class="content-slide-news">
 					<h5 class="title-slide-news">
@@ -1355,7 +1338,7 @@ get_header();
 
 
 					<div class="img-slide-news-in">
-						<img src="img/photo.png">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo.png">
 					</div>
 					<div class="del">
 
@@ -1411,7 +1394,7 @@ get_header();
 
 
 					<div class="img-slide-news-in">
-						<img src="img/photo2-slider-news.png">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo2-slider-news.png">
 					</div>
 					<div class="del">
 
@@ -1451,7 +1434,7 @@ get_header();
 				<div class="content-slide-news-in">
 
 					<div class="img-slide-news-in">
-						<img src="img/dwadwae.jpeg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/dwadwae.jpeg">
 					</div>
 					<div class="del">
 
@@ -1489,7 +1472,7 @@ get_header();
 				<div class="content-slide-news-in">
 
 					<div class="img-slide-news-in">
-						<img src="img/evveev.jpeg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/evveev.jpeg">
 					</div>
 					<div class="del">
 
@@ -1529,7 +1512,7 @@ get_header();
 				<div class="content-slide-news-in">
 
 					<div class="img-slide-news-in">
-						<img src="img/123452.jpeg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/123452.jpeg">
 					</div>
 					<div class="del">
 
@@ -1594,7 +1577,7 @@ get_header();
 				<div class="content-slide-news-in">
 
 					<div class="img-slide-news-in">
-						<img src="img/BY0hY_croper_ru.jpeg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/BY0hY_croper_ru.jpeg">
 					</div>
 					<div class="del">
 
@@ -1695,7 +1678,7 @@ get_header();
 
 	<div class="counter-slider-mobile">
 		<span id="cp-mob">1</span>
-		<img src="img/Line.svg">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Line.svg">
 		<span class="dad">6</span>
 		</span>
 	</div>

@@ -45,27 +45,15 @@ function custom_theme_options() {
 				'title' => 'Шапка',
 			),
 			array(
+				'id'    => 'main',
+				'title' => 'Основной контент',
+			),
+			array(
 				'id'    => 'option_types',
 				'title' => __( 'Option Types', 'theme-text-domain' ),
 			),
 		),
 		'settings'        => array(
-			/* Таб для размещения раздела настроек в разделе "Основные" */
-			array(
-				'id'           => 'header_tab',
-				'label'        => 'Основные',
-				'desc'         => '',
-				'type'         => 'tab',
-				'section'      => 'header',
-			),
-			/* Секция кастроек для загрузки изображения в качестве лого */
-				array(
-				'id'           => 'logo_upload',
-				'label'        => 'Логотип',
-				'desc'         => 'Загрузка картинки для логотипа',
-				'type'         => 'upload',
-				'section'      => 'header',
-			),
 			/* Таб для размещения раздела настроек в разделе "Контакты" */
 			array(
 				'id'           => 'header_contact_tab',
@@ -113,6 +101,47 @@ function custom_theme_options() {
 				'std'          => '',
 				'type'         => 'text',
 				'section'      => 'header',
+			),
+			/* Таб для размещения настроек "Основной контент" > "Главная страница" */
+			array(
+				'id'           => 'main_tab',
+				'label'        => 'Главная страница',
+				'desc'         => '',
+				'type'         => 'tab',
+				'section'      => 'main',
+			),
+			/* Секция настроек для текста на при загрузке страници */
+			array(
+				'id'           => 'main_textarea_desctop_simple',
+				'label'        => 'Большая область текста для десктопов',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'main_textarea_mobile_simple',
+				'label'        => 'Большая область текста для мобильных устройств',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
+			),
+			/* Таб для размещения настроек "Основной контент" > "Текст после 'ЧИТАТЬ' " */
+			array(
+				'id'           => 'main_second_section_tab',
+				'label'        => 'Текст после "ЧИТАТЬ"',
+				'desc'         => '',
+				'type'         => 'tab',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'main_second_textarea_simple',
+				'label'        => 'Заглавная надпись',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
 			),
 
 			/* Примеры настроек */
