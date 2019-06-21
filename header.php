@@ -58,7 +58,7 @@
 							</div>
 							<div class="silver-line"></div>
 							<div class="menu-item-mobile">
-								<a onclick="func_Close()" id="close-burger" href="#">close</a>
+								<a id="close-burger" href="#">close</a>
 							</div>
 
 						</nav>

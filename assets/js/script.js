@@ -238,16 +238,13 @@ $( document ).ready(function() {
 
 
     $('#burg').on('click',function(){
-    $('.header-menu-mobile').slideToggle();
+        $('.header-menu-mobile').slideToggle();
     });
 
 
-
-    function func_Close(){
-        $('.header-menu-mobile').slideUp();
-
-    }
-
+    $('#close-burger').on('click', function(){
+        $('.header-menu-mobile').slideUp(); 
+    });
 
 
     $('#button-send-order').on('click',function(){
@@ -319,11 +316,6 @@ $( document ).ready(function() {
 
 
         }, 100);
-
-    
-
-        
-
     
     });
 

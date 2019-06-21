@@ -1,15 +1,15 @@
 $( document ).ready(function() {
 
   $('.primator').slick({
-  prevArrow: '<button class="slick-arrow slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow.png"></button>',
-  nextArrow: '<button class ="slick-arrow slick-next"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/right-arrow.svg"></button>',
+  prevArrow: '<button class="slick-arrow slick-prev"><img src="./wp-content/themes/m2collab/assets/img/left-arrow.png"></button>',
+  nextArrow: '<button class ="slick-arrow slick-next"><img src="./wp-content/themes/m2collab/assets/img/right-arrow.svg"></button>',
   appendArrows: $('.your-class-arrow'),
 
   });
 
   $('.primator-mob').slick({
-  prevArrow: '<button class="slick-arrow slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow.png"></button>',
-  nextArrow: '<button class ="slick-arrow slick-next"><img src="img/mob-arr1.svg"></button>',
+  prevArrow: '<button class="slick-arrow slick-prev"><img src="./wp-content/themes/m2collab/assets/img/left-arrow.png"></button>',
+  nextArrow: '<button class ="slick-arrow slick-next"><img src="./wp-content/themes/m2collab/assets/img/mob-arr1.svg"></button>',
   appendArrows: $('.arrow-primator-mob'),
   });
 
@@ -20,8 +20,8 @@ $( document ).ready(function() {
 
 
   $('.news-slider-in').slick({
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow.png"></button>',
-  nextArrow: '<button class ="slick-arrow slick-next"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mob-arr1.svg"></button>',
+    prevArrow: '<button class="slick-arrow slick-prev"><img src="./wp-content/themes/m2collab/assets/img/left-arrow.png"></button>',
+  nextArrow: '<button class ="slick-arrow slick-next"><img src="./wp-content/themes/m2collab/assets/img/mob-arr1.svg"></button>',
   appendArrows: $('.your-class-arrow2'),
 
   }); 
@@ -36,15 +36,15 @@ $( document ).ready(function() {
 
 
   $('.tablet-slider-second-content').slick({
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow.png"></button>',
-  nextArrow: '<button class ="slick-arrow slick-next"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/right-arrow.svg"></button>',
+    prevArrow: '<button class="slick-arrow slick-prev"><img src="./wp-content/themes/m2collab/assets/img/left-arrow.png"></button>',
+  nextArrow: '<button class ="slick-arrow slick-next"><img src="./wp-content/themes/m2collab/assets/img/right-arrow.svg"></button>',
   appendArrows: $('.your-class-arrow3'),
 
   });
 
   $('.mobile-slider-second-content').slick({
-  prevArrow: '<button class="slick-arrow slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow.png"></button>',
-  nextArrow: '<button class ="slick-arrow slick-next"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mob-arr1.svg"></button>',
+  prevArrow: '<button class="slick-arrow slick-prev"><img src="./wp-content/themes/m2collab/assets/img/left-arrow.png"></button>',
+  nextArrow: '<button class ="slick-arrow slick-next"><img src="./wp-content/themes/m2collab/assets/img/mob-arr1.svg"></button>',
   appendArrows: $('.prev'),
 
   });

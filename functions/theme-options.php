@@ -102,6 +102,8 @@ function custom_theme_options() {
 				'type'         => 'text',
 				'section'      => 'header',
 			),
+
+
 			/* Таб для размещения настроек "Основной контент" > "Главная страница" */
 			array(
 				'id'           => 'main_tab',
@@ -110,7 +112,7 @@ function custom_theme_options() {
 				'type'         => 'tab',
 				'section'      => 'main',
 			),
-			/* Секция настроек для текста на при загрузке страници */
+			/* Секция настроек для текста на главной странице */
 			array(
 				'id'           => 'main_textarea_desctop_simple',
 				'label'        => 'Большая область текста для десктопов',
@@ -127,6 +129,7 @@ function custom_theme_options() {
 				'type'         => 'textarea-simple',
 				'section'      => 'main',
 			),
+
 			/* Таб для размещения настроек "Основной контент" > "Текст после 'ЧИТАТЬ' " */
 			array(
 				'id'           => 'main_second_section_tab',
@@ -143,6 +146,71 @@ function custom_theme_options() {
 				'type'         => 'textarea-simple',
 				'section'      => 'main',
 			),
+			array(
+				'id'           => 'main_second_textarea_first_p',
+				'label'        => 'Первый абзац',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'main_second_textarea_second_p',
+				'label'        => 'Второй абзац',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'main_second_textarea_third_p',
+				'label'        => 'Третий абзац',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'textarea-simple',
+				'section'      => 'main',
+			),
+			/* Таб для размещения настроек "Услуги" */
+			array(
+				'id'           => 'main_section_services_tab',
+				'label'        => 'Страница Услуги',
+				'desc'         => '',
+				'type'         => 'tab',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'mens_cut',
+				'label'        => 'Мужская стрижка',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'mens_cut_price',
+				'label'        => 'Цена',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'beard_correction',
+				'label'        => 'Коррекция бороды',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'main',
+			),
+			array(
+				'id'           => 'beard_correction_price',
+				'label'        => 'Цена',
+				'desc'         => '',
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'main',
+			),
+
 
 			/* Примеры настроек */
 			array(

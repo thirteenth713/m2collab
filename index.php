@@ -44,7 +44,6 @@ get_header();
 
 	</div>
 
-
 </div><!-- close contact-wrapper</!-->
 
 <div class="social-block" id="social-box">
@@ -69,9 +68,9 @@ get_header();
 			ценим чистоту, открытость, комфорт, качество во всех деталях.<br> Наша миссия - помочь тебе нравится себе!
 		</h1> -->
 		<h1 class="title-name">
-		<?php if (ot_get_option('main_textarea_desctop_simple')) { ?>
-			<?php echo ot_get_option('main_textarea_desctop_simple'); ?>
-		<?php } ?>
+			<?php if (ot_get_option('main_textarea_desctop_simple')) { ?>
+				<?php echo ot_get_option('main_textarea_desctop_simple'); ?>
+			<?php } ?>
 		</h1>
 	</div>
 
@@ -124,9 +123,9 @@ get_header();
 
 	<div class="title-main-content1">
 		<h1 class="title-name">
-		<?php if (ot_get_option('main_textarea_mobile_simple')) { ?>
-			<?php echo ot_get_option('main_textarea_mobile_simple'); ?>
-		<?php } ?>
+			<?php if (ot_get_option('main_textarea_mobile_simple')) { ?>
+				<?php echo ot_get_option('main_textarea_mobile_simple'); ?>
+			<?php } ?>
 			<!-- <span class="upper">M2</span> - барбершоп это мужская парикмахерская с принципами. Мы как никто другой <br>
 			ценим чистоту, открытость, комфорт, качество во всех деталях. Наша миссия - помочь тебе нравится себе! -->
 		</h1>
@@ -197,33 +196,33 @@ get_header();
 <div class="second-content" id="cont_2">
 	<div class="wrapper-second-content">
 		<h2 class="title-second-content">
-			М2 Барбершоп - это мужская парикмахерская с принципами. Мы как никто другой ценим<br>
-			комфорт, чистоту, открытость и качество во всех деталях. Наша миссия - помочь тебе нравится себе!
+			<?php if (ot_get_option('main_second_textarea_simple')) { ?>
+				<?php echo ot_get_option('main_second_textarea_simple'); ?>
+			<?php } ?>
 		</h2>
 		<div class="list-wrapper">
 			<div class="list-item">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector.svg">
 				<p class="desc-list-item">
-					Нам важен твой комфорт, мы используем лучшие кресла c откидывающимися спинками, <br>
-					угощаем кофе, играем с тобой в плейстейшен на удобных диванах. Ты не найдешь грязи,<br>
-					инструмент которым тебя подстригут будет чист, обработан как следует, а полотенца<br>
-					будут тщательно выстираны.
+					<?php if (ot_get_option('main_second_textarea_first_p')) { ?>
+						<?php echo ot_get_option('main_second_textarea_first_p'); ?>
+					<?php } ?>
 				</p>
 			</div>
 			<div class="list-item">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/043-bow-tie.svg">
 				<p class="desc-list-item">
-					Мы работаем над навыками нашего персонала. Наши администраторы максимально<br>
-					отзывчивы и тактичны. А барберы - клиентоориентированые профессионалы.
+					<?php if (ot_get_option('main_second_textarea_second_p')) { ?>
+						<?php echo ot_get_option('main_second_textarea_second_p'); ?>
+					<?php } ?>
 				</p>
 			</div>
 			<div class="list-item">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/009-man.svg">
 				<p class="desc-list-item">
-					Наше главное требование при приеме на работу барбера- работать на максимум каждый<br>
-					день. Каждую стрижку. Мы перфекционисты, мы либо лучшие, либо никак.<br>
-					Стрижка должна быть идеальной, во всех деталях. А общение барбера должно быть на<br>
-					высоте, чтобы ты вернулся к нам и привел друзей еще не один десяток раз.
+					<?php if (ot_get_option('main_second_textarea_third_p')) { ?>
+						<?php echo ot_get_option('main_second_textarea_third_p'); ?>
+					<?php } ?>
 				</p>
 			</div>
 		</div>
@@ -244,8 +243,9 @@ get_header();
 	<div class="tablet-second-content">
 		<div class="wrapper-tablet-second-content">
 			<h2 class="title-tablet-second-content">
-				М2 Барбершоп - это мужская парикмахерская с принципами. Мы как никто другой ценим<br>
-				комфорт, чистоту, открытость и качество во всех деталях. Наша миссия - помочь тебе нравится себе!
+				<?php if (ot_get_option('main_second_textarea_simple')) { ?>
+					<?php echo ot_get_option('main_second_textarea_simple'); ?>
+				<?php } ?>
 			</h2>
 
 			<div class="tablet-slider-second-content">
@@ -253,11 +253,9 @@ get_header();
 					<div class="tablet-content-slider-item">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector.svg">
 						<p class="desc-tablet-slider">
-							Нам важен твой комфорт, мы используем лучшие кресла с откидывающимися спинками, <br>
-							угощаем кофе, играем с тобой в плейстейшен на удобных диванах. Ты не найдешь грязи,<br>
-							инструмент которым тебя подстригут будет чист, обработан как следует, а полотенца<br>
-							будут тщательно выстираны
-
+							<?php if (ot_get_option('main_second_textarea_first_p')) { ?>
+								<?php echo ot_get_option('main_second_textarea_first_p'); ?>
+							<?php } ?>
 						</p>
 
 					</div>
@@ -269,11 +267,10 @@ get_header();
 					<div class="tablet-content-slider-item">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/043-bow-tie.svg">
 						<p class="desc-tablet-slider">
-							Мы работаем над навыками нашего персонала. Наши администраторы максимально<br>
-							отзывчивы и тактичны. А барберы - клиентоориентированые профессионалы
-
+							<?php if (ot_get_option('main_second_textarea_second_p')) { ?>
+								<?php echo ot_get_option('main_second_textarea_second_p'); ?>
+							<?php } ?>
 						</p>
-
 					</div>
 					<!--close tablet-content-slider-item----->
 				</div>
@@ -283,13 +280,10 @@ get_header();
 					<div class="tablet-content-slider-item">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/009-man.svg">
 						<p class="desc-tablet-slider">
-							Наше главное требование при приеме на работу барбера- работать на максимум каждый<br>
-							день. Каждую стрижку. Мы перфекционисты, мы либо лучшие, либо никак.<br>
-							Стрижка должна быть идеальной, во всех деталях. А общение барбера должно быть на<br>
-							высоте, чтобы ты вернулся к нам и привел друзей еще не один десяток раз.
-
+							<?php if (ot_get_option('main_second_textarea_third_p')) { ?>
+								<?php echo ot_get_option('main_second_textarea_third_p'); ?>
+							<?php } ?>
 						</p>
-
 					</div>
 					<!--close tablet-content-slider-item----->
 				</div>
@@ -329,8 +323,9 @@ get_header();
 			<div class="wrapper-mobile-second-content">
 
 				<h2 class="title-mobile-second-content">
-					&nbsp;М2 Барбершоп - это мужская парикмахерская<br> с принципами. Мы как никто другой ценим<br>
-					комфорт, чистоту, открытость и качество во всех деталях. Наша миссия - помочь тебе нравится себе!
+					&nbsp;<?php if (ot_get_option('main_second_textarea_simple')) { ?>
+						<?php echo ot_get_option('main_second_textarea_simple'); ?>
+					<?php } ?>
 				</h2>
 
 
@@ -342,15 +337,12 @@ get_header();
 							<div class="mobile-content__flex__element">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector1-yellow.svg">
 								<span class="img-title">Комфорт</span>
-
 							</div>
 
 							<p class="desc-mobile-slider">
-								Нам важен твой комфорт, мы используем лучшие кресла с откидывающимися спинками,
-								угощаем кофе, играем с тобой в плейстейшен на удобных диванах. Ты не найдешь грязи,
-								инструмент которым тебя подстригут будет чист, обработан как следует, а полотенца
-								будут тщательно выстираны
-
+								<?php if (ot_get_option('main_second_textarea_first_p')) { ?>
+									<?php echo ot_get_option('main_second_textarea_first_p'); ?>
+								<?php } ?>
 							</p>
 
 						</div>
@@ -363,18 +355,12 @@ get_header();
 							<div class="mobile-content__flex__element">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector2-yellow.svg">
 								<span class="img-title">Персонал</span>
-
 							</div>
 
 							<p class="desc-mobile-slider">
-								Мы работаем над навыками
-								нашего персонала. Наши администраторы
-								максимально
-								отзывчивы и тактичны. А барберы -
-								клиентоориентированные
-								профессионалы
-
-
+								<?php if (ot_get_option('main_second_textarea_second_p')) { ?>
+									<?php echo ot_get_option('main_second_textarea_second_p'); ?>
+								<?php } ?>
 							</p>
 
 						</div>
@@ -382,38 +368,22 @@ get_header();
 					</div>
 					<!---close mobile-slider-item---->
 
-					< class="mobile-slider-item">
+					<div class="mobile-slider-item">
 						<div class="mobile-content-slider-item">
 							<div class="mobile-content__flex__element">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector3-yellow.svg">
 								<span class="img-title">Качество</span>
-
 							</div>
 
 							<p class="desc-mobile-slider">
-								Наше главное требование при приеме на
-								работу барбера - работать на максимум
-								каждый день. Каждую стрижку. Мы
-								перфекционисты, мы либо лучшие, либо
-								никак. Стрижка должна быть идеальной,
-								во всех деталях. А общение барбера
-								должно быть на высоте, чтобы ты
-								вернулся к нам и привел друзей еще не
-								один десяток раз
-
+								<?php if (ot_get_option('main_second_textarea_third_p')) { ?>
+									<?php echo ot_get_option('main_second_textarea_third_p'); ?>
+								<?php } ?>
 							</p>
-
 						</div>
 						<!--close mobile-content-slider-item----->
-					</ div>
+					</div>
 					<!---close mobile-slider-item---->
-
-
-
-
-
-
-
 				</div>
 				<!--close mobile-slider-second-content-->
 			</div>

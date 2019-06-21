@@ -99,7 +99,7 @@ function m2col_scripts() {
 	wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/slick/slick.css');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/slick/slick-theme.css');
 	wp_enqueue_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
-	wp_enqueue_style('style-th', get_template_directory_uri() . '/assets/css/style-th.css');
+	// wp_enqueue_style('style-th', get_template_directory_uri() . '/assets/css/style-th.css');
 	wp_enqueue_style( 'm2col-style', get_template_directory_uri() . '/assets/css/style.css' );
 
 
